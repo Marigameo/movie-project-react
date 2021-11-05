@@ -1,13 +1,86 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+
+
+.movie-poster{
+  height: 500px;
+  width: 300px;
+  object-fit: cover;
+}
+.Movie-list{
+  display:flex;
+  /* align-items: center; */
+  justify-content: space-between; 
+  /* flex-direction: column; */
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.movie-container{
+  width: 300px;
+}
+
+body{
+
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.movie-specs{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.movie-rating{
+  font-size: 18px;
+  font-weight: bold;
+}
+.movie-name{
+  font-size: 24px;
+}
+.movie-show-button{
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.add-movie-form{
+  display: flex;
+  flex-direction:column;
+  gap: 20px;
+  margin-bottom: 10px;
+  
+  
+}
+
+.Movie-details-container{
+  max-width: 50rem;
+}
+
+.gamebox{
+  height: 8rem;
+  width:8rem;
+  
+  color: black;
+  background-color: white;
+  font-size : 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border : 1px solid black;
+
+  
+}
+.board{
+  display:grid;
+  grid-template-columns: repeat(3,8rem);
+  /* works with or without min-width */
+  width: min-content;
+}
+.otherbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
